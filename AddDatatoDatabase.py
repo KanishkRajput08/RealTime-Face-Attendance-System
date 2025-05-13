@@ -5,23 +5,12 @@ from firebase_admin import db
 
 cred = credentials.Certificate("serviceAccountKey.json")
 firebase_admin.initialize_app(cred,{
-    'databaseURL':"https://faceattendancerealtime-65fc3-default-rtdb.firebaseio.com/"
+    'databaseURL':"https://firebase.google.com/"
 })
 
 ref = db.reference('Students')
 
 data = {
-    "01013211921":
-        {
-            "name": "Sukrati Sharma",
-            "major": "AI - DS",
-            "starting_year": 2021,
-            "total_attendance": 6,
-            "standing": "G",
-            "year": 4,
-            "last_attendance_time": "2025-04-25 15:29:55"
-
-        },
     "03513211921":
             {
                 "name": "Vimal Barik",

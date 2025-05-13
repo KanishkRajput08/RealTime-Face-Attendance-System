@@ -9,8 +9,8 @@ from firebase_admin import storage
 
 cred = credentials.Certificate("serviceAccountKey.json")
 firebase_admin.initialize_app(cred,{
-    'databaseURL':"https://firebase.google.com/",
-    'storageBucket': "firebasestorage.app"
+    'databaseURL':"",
+    'storageBucket': ""
 })
 
 # importing the student images2

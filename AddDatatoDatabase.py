@@ -5,7 +5,7 @@ from firebase_admin import db
 
 cred = credentials.Certificate("serviceAccountKey.json")
 firebase_admin.initialize_app(cred,{
-    'databaseURL':"https://firebase.google.com/"
+    'databaseURL':""
 })
 
 ref = db.reference('Students')
